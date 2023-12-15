@@ -1,0 +1,295 @@
+:root {
+  --main-color: #5062d7;
+  --text-color: #fff;
+  --add-color: rgb(210, 210, 211);
+  --accent-color: rgb(232, 239, 132);
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--main-color);
+}
+/* .header .container {
+  display: flex;
+  align-items: center;
+} */
+body {
+  font-family: "Roboto";
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-item-link {
+  color: var(--text-color);
+}
+.nav-item-link:hover, .nav-item-link:focus {
+ color: var(--accent-color);
+}
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(https://uniqa.ua/content/news/003000-004000/shutterstock_1633125442_sm2_3629.jpg);
+  color: var(--text-color);
+  background-size: cover;
+  background-position: bottom;
+  height: 500px;
+  padding: 30px;
+  display: flex;
+}
+.hero-title {
+  padding-top: 50px;
+  font-size: 50px;
+  font-family: "Playfair Display";
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.hero-subtitle {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  margin-bottom: 10px;
+}
+.hero-text {
+  font-size: 20px;
+  margin-bottom: 140px;
+}
+.hero-link{
+ margin-left: 535px;
+ padding: 10px 15px;
+ background-color: var(--main-color);
+ border-radius: 8px;
+ border-color: transparent;
+ color: var(--text-color);
+ font-size: 18px;
+}
+.hero-link:hover, .hero-link:focus {
+  cursor: pointer;
+  background-color: rgba(63, 30, 211, 0.7);
+}
+.info {
+  display: inline-block;
+  margin-top: 30px ;
+  margin-left: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: var(--add-color);
+}
+.info-title {
+  /* padding-left: 15px; */
+  font-size: 20px;
+  font-family: "Playfair Display";
+  margin-bottom: 15px;
+}
+.info-list-item {
+  margin-bottom: 10px;
+}
+.footer {
+  margin-top: 35px;
+  padding-top: 30px;
+  background-color: var(--main-color);
+}
+/* Друга сторінка */
+.ai-description {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  /* border-bottom: var(--add-color) dashed; */
+}
+.ai-description .container {
+  display: flex;
+}
+.ai-description-text {
+  padding: 10px;
+  border-left: var(--main-color) solid 5px;
+}
+.ai-description-img {
+  padding-left: 10px;
+  height: 350px;
+  padding-top: 10px;
+}
+.application-title {
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+.application-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.application-list-item {
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.application-item-img {
+  width: 300px;
+}
+.application-item-title {
+  font-size: 30px;
+  font-weight: 500;
+  background-color: var(--main-color); 
+  padding: 5px;
+  border-right: #4050b4 solid 5px;
+}
+.application-item-text {
+  border-bottom: var(--add-color) solid 5px;
+  border-right: var(--add-color) solid 5px;
+}
+.application-link {
+  margin-left: 535px;
+  padding: 10px 15px;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  border-color: transparent;
+  color: var(--text-color);
+  font-size: 18px;
+}
+.application-link:hover, .application-link:focus {
+  background-color: rgba(63, 30, 211, 0.7);
+  cursor: pointer;
+}
+/* Третя сторінка */
+.ai-evolution {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: var(--add-color) solid 5px;
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), url(https://www.freecodecamp.org/ukrainian/news/content/images/2023/05/pexels-tara-winstead-8386440.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+}
+.ai-evolution-title {
+ font-family: "Playfair Display";
+ padding-bottom: 20px;
+ font-size: 30px;
+}
+.ai-evolution-text {
+  line-height: 2.3;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+}
+.history {
+  padding: 40px 0;
+}
+.history-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+.history-list-item {
+  width: 500px;
+  background-color: var(--add-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+.history-list-item:nth-child(2n-1) {
+  border-right: var(--main-color) solid 5px;
+}
+.history-list-item:nth-child(2n) {
+  margin-left: 495px;
+  padding-right: 100px;
+  border-left: var(--main-color) solid 5px;
+}
+.history-item-date {
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+.history-item-title {
+  margin-bottom: 10px;
+  color: var(--main-color);
+  font-weight: 900;
+}
+.history-link {
+  margin-left: 500px;
+  padding: 10px 15px;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  border-color: transparent;
+  color: var(--text-color);
+  font-size: 18px;
+}
+.history-link:hover, .history-link:focus {
+  background-color: rgba(63, 30, 211, 0.7);
+  cursor: pointer;
+}
+
+/* Четверта сторінка */
+.ai-facts {
+  padding: 30px 0;
+}
+.ai-facts-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+.facts-item-subtitle{
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: var(--main-color);
+}
+.facts-item-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  border-left: var(--main-color) solid 5px;
+  padding: 10px;
+}
